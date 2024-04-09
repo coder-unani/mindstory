@@ -1,0 +1,10 @@
+{% extends "./base.html" %} {% block page_container %}
+<h1>일기 목록 페이지</h1>
+<ul>
+  {% for page in pages %}
+  <li>
+    <div>{{ page.title }}</div>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock page_container %}
